@@ -42,10 +42,8 @@ So the goal is: Make sure that the modpack is compatible with pojavlauncher, but
   - AppleCore (1.3.2 -> 3.1.1)
   - BiblioCraft (1.11.5 -> 1.11.7)
   - Carpenter's Blocks (3.3.8.1 -> 3.3.8.2)
-  - CofHCore (3.1.3-327 -> 3.1.4-329)
   - CraftTweaker (3.0.13 -> 3.1.0-legacy)
   - FarSeek (1.0.11 -> 2.0.1)
-  - fastcraft (1.23 -> 1.25)
   - ironchest (6.0.60.741-universal -> 6.0.62.742-universal)
   - mystcraft (0.12.3.03 -> 0.12.3.04)
   - OpenBlocks (1.5.1 -> 1.6)
@@ -65,6 +63,9 @@ So the goal is: Make sure that the modpack is compatible with pojavlauncher, but
   - Journey Map (personal preference I think)
   - Morpheus  (no idea why, possibly some problems)
   - ThaumicInfusion (some incompatibility I don't remember)
+  - CofHCore (incompatibility with renderer used by pojavlauncher)
+  - fastcraft (incompatibility with renderer used by pojavlauncher)
+  - HQM (simply add back if you want quests)
 
 
 Config changes:
@@ -81,3 +82,11 @@ Custom CraftTweaker scripts:
   - add recipes to modify the location of waystones
   - add workaround for Thaumic Horizons unusable empty syringes (craft the wrong kind to get the right kind)
   - allow emptying of Thaumic Horizons syringes
+  - disable AM2 moonstone meteors
+  - disable AM2 hecate (they target passive mobs)
+  - disable April's fools stuff
+  - disable Witchery brew and gas as mystcraft fluid
+  - disable Botania ManaFluxField (no RF in this pack)
+  - disable Botania Flower gen, replace early game with Floral Fertilizer recipe using Witchery wood ash
+  - enable chickes shedding feathers
+  - disable Witchery coven visits

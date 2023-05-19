@@ -85,6 +85,12 @@ recipes.addShapeless(<ThaumicHorizons:syringeEmpty>,[<ThaumicHorizons:syringeEmp
 // allow emptying blood syringes
 recipes.addShapeless(<ThaumicHorizons:syringeEmpty>,[<ThaumicHorizons:syringeBlood>]);
 
+// make getting started with Botania easier since we turned off flower generation
+// bonemeal is hard to get in the beginning, so allow substitution with wood ash
+recipes.addShapeless(<Botania:fertilizer>,[<witchery:ingredient:18>,<witchery:ingredient:18>,<minecraft:dye:11>,<minecraft:dye:11>,<minecraft:dye:1>,<minecraft:dye:1>]);
+
 //ideas:
 // - allow void putty to repair poppets of vampirism
 // - put nodes / animals stored in AM2 Appropriation spell into thaumcraft jar
+// - moonstone ore craftable
+// - add recipe to add timeless ivy to boots of the meteor / comet (fix)
