@@ -44,6 +44,7 @@ So the goal is: Make sure that the modpack is compatible with pojavlauncher, but
   - Carpenter's Blocks (3.3.8.1 -> 3.3.8.2)
   - CraftTweaker (3.0.13 -> 3.1.0-legacy)
   - FarSeek (1.0.11 -> 2.0.1)
+  - fastcraft (1.23 -> 1.25)
   - ironchest (6.0.60.741-universal -> 6.0.62.742-universal)
   - mystcraft (0.12.3.03 -> 0.12.3.04)
   - OpenBlocks (1.5.1 -> 1.6)
@@ -64,7 +65,6 @@ So the goal is: Make sure that the modpack is compatible with pojavlauncher, but
   - Morpheus  (no idea why, possibly some problems)
   - ThaumicInfusion (some incompatibility I don't remember)
   - CofHCore (incompatibility with renderer used by pojavlauncher)
-  - fastcraft (incompatibility with renderer used by pojavlauncher)
   - HQM (simply add back if you want quests)
 
 
