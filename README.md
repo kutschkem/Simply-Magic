@@ -83,6 +83,7 @@ Custom CraftTweaker scripts:
   - add workaround for Thaumic Horizons unusable empty syringes (craft the wrong kind to get the right kind)
   - allow emptying of Thaumic Horizons syringes
   - disable AM2 moonstone meteors
+  - add recipes to craft moonstone ore as replacement for meteors
   - disable AM2 hecate (they target passive mobs)
   - disable April's fools stuff
   - disable Witchery brew and gas as mystcraft fluid

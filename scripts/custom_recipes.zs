@@ -89,8 +89,28 @@ recipes.addShapeless(<ThaumicHorizons:syringeEmpty>,[<ThaumicHorizons:syringeBlo
 // bonemeal is hard to get in the beginning, so allow substitution with wood ash
 recipes.addShapeless(<Botania:fertilizer>,[<witchery:ingredient:18>,<witchery:ingredient:18>,<minecraft:dye:11>,<minecraft:dye:11>,<minecraft:dye:1>,<minecraft:dye:1>]);
 
+// add recipe for otherwise unobtainable moonstone ore
+val infinityOrb = <ore:infinityOrb>;
+infinityOrb.add(<arsmagica2:rune:17>);
+infinityOrb.add(<arsmagica2:rune:18>);
+infinityOrb.add(<arsmagica2:rune:19>);
+val moonstoneOre = <arsmagica2:vinteumOre:3>;
+
+recipes.addShaped(moonstoneOre * 8,[
+[<ore:stone>,<ore:stone>,<ore:stone>],
+[<ore:stone>,<ore:infinityOrb>,<ore:stone>],
+[<ore:stone>,<ore:stone>,<ore:stone>]
+]);
+
+val lunarTides = <arsmagica2:flickerFocus:134>;
+
+recipes.addShaped(moonstoneOre * 8,[
+[<ore:stone>,<ore:stone>,<ore:stone>],
+[<ore:stone>,lunarTides.reuse(),<ore:stone>],
+[<ore:stone>,<ore:stone>,<ore:stone>]
+]);
+
 //ideas:
 // - allow void putty to repair poppets of vampirism
 // - put nodes / animals stored in AM2 Appropriation spell into thaumcraft jar
-// - moonstone ore craftable
 // - add recipe to add timeless ivy to boots of the meteor / comet (fix)
