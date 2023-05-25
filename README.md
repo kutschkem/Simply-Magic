@@ -42,6 +42,7 @@ So the goal is: Make sure that the modpack is compatible with pojavlauncher, but
   - AppleCore (1.3.2 -> 3.1.1)
   - BiblioCraft (1.11.5 -> 1.11.7)
   - Carpenter's Blocks (3.3.8.1 -> 3.3.8.2)
+  - Chisel (Chisel2-2.5.11.44 -> Chisel-2.9.5.11)
   - CraftTweaker (3.0.13 -> 3.1.0-legacy)
   - FarSeek (1.0.11 -> 2.0.1)
   - fastcraft (1.23 -> 1.25)
