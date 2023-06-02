@@ -110,7 +110,15 @@ recipes.addShaped(moonstoneOre * 8,[
 [<ore:stone>,<ore:stone>,<ore:stone>]
 ]);
 
+
+//add missing thaumcraft aspects
+val witcherySeeds = [<witchery:seedsbelladonna>,<witchery:seedsartichoke>,<witchery:seedsmandrake>,<witchery:seedssnowbell>] as IItemStack[];
+
+for i, witcherySeed in witcherySeeds {
+mods.thaumcraft.Aspects.set(witcherySeed, "herba 1");
+}
 //ideas:
 // - allow void putty to repair poppets of vampirism
 // - put nodes / animals stored in AM2 Appropriation spell into thaumcraft jar
 // - add recipe to add timeless ivy to boots of the meteor / comet (fix)
+// allow usage of nether shards for arcane stone
