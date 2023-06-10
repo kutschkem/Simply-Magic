@@ -1,3 +1,8 @@
+Use createServerfiles.sh first!!!
+
+
+
+
 If your server does not launch note the following:
 
 These need to be removed from the server files:
