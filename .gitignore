@@ -3,3 +3,5 @@ ServerFiles/scripts
 ServerFiles/mods
 
 mods/carpentersblocks/CarpentersBlocksCachedResources.zip
+
+*.disabled
