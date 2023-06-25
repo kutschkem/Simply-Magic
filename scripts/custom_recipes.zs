@@ -30,22 +30,16 @@ for i, rune in runes {
 
 recipes.addShaped(waystone,[[waystone.marked("waystone"), rune]
                                         ], function(output, inputs, crafting) {
- return waystone.withTag(
-	{PosD: inputs.waystone.tag.PosD,
-	 NameD: inputs.waystone.tag.NameD,
-	 PosX: inputs.waystone.tag.PosX,
-	 PosY: inputs.waystone.tag.PosY,
+ return inputs.waystone.updateTag(
+	{
 	 PosZ: inputs.waystone.tag.PosZ + range
 	});
 });
 
 recipes.addShaped(waystone,[[rune, waystone.marked("waystone")]
                                         ], function(output, inputs, crafting) {
- return waystone.withTag(
-	{PosD: inputs.waystone.tag.PosD,
-	 NameD: inputs.waystone.tag.NameD,
-	 PosX: inputs.waystone.tag.PosX,
-	 PosY: inputs.waystone.tag.PosY,
+ return inputs.waystone.updateTag(
+	{
 	 PosZ: inputs.waystone.tag.PosZ - range
 	});
 });
@@ -53,24 +47,18 @@ recipes.addShaped(waystone,[[rune, waystone.marked("waystone")]
 
 recipes.addShaped(waystone,[[waystone.marked("waystone")],
                             [rune]            ], function(output, inputs, crafting) {
- return waystone.withTag(
-	{PosD: inputs.waystone.tag.PosD,
-	 NameD: inputs.waystone.tag.NameD,
-	 PosX: inputs.waystone.tag.PosX + range,
-	 PosY: inputs.waystone.tag.PosY,
-	 PosZ: inputs.waystone.tag.PosZ
+ return inputs.waystone.updateTag(
+	{
+	 PosX: inputs.waystone.tag.PosX + range
 	});
 });
 
 
 recipes.addShaped(waystone,[[rune],
                             [waystone.marked("waystone")]            ], function(output, inputs, crafting) {
- return waystone.withTag(
-	{PosD: inputs.waystone.tag.PosD,
-	 NameD: inputs.waystone.tag.NameD,
-	 PosX: inputs.waystone.tag.PosX - range,
-	 PosY: inputs.waystone.tag.PosY,
-	 PosZ: inputs.waystone.tag.PosZ
+ return inputs.waystone.updateTag(
+	{
+	 PosX: inputs.waystone.tag.PosX - range
 	});
 });
 
@@ -117,8 +105,23 @@ val witcherySeeds = [<witchery:seedsbelladonna>,<witchery:seedsartichoke>,<witch
 for i, witcherySeed in witcherySeeds {
 mods.thaumcraft.Aspects.set(witcherySeed, "herba 1");
 }
+
+
+// fix for issue #2 (Timeless Ivy can't be applied to Boots of the Meteor/Comet)
+val explorationBoots = [<ThaumicExploration:bootsMeteor>,<ThaumicExploration:bootsComet>] as IItemStack[];
+
+for i, boots in explorationBoots {
+recipes.addShapeless(boots,
+   [boots.marked("boots"),<Botania:regenIvy>,
+    <minecraft:leather>,<minecraft:leather>,<minecraft:leather>],
+   function(output, inputs, crafting){
+     return inputs.boots.updateTag({
+     Botania_regenIvy: 1  
+});
+});
+}
+
 //ideas:
 // - allow void putty to repair poppets of vampirism
 // - put nodes / animals stored in AM2 Appropriation spell into thaumcraft jar
-// - add recipe to add timeless ivy to boots of the meteor / comet (fix)
 // allow usage of nether shards for arcane stone
