@@ -2,6 +2,8 @@ ServerFiles/config
 ServerFiles/scripts
 ServerFiles/mods
 
+.mixin.out/
+
 mods/carpentersblocks/CarpentersBlocksCachedResources.zip
 
 *.disabled
@@ -31,3 +33,5 @@ manifest.json
 mod-config
 ops.json
 usernamecache.json
+bettercrashes-stackdeobfuscator-methods.csv
+icon.png
