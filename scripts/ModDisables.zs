@@ -16,3 +16,8 @@ for i, item in disabled_items {
 recipes.remove(item);
 NEI.hide(item);
 }
+
+// disable ender chest focus because it can be used to transfer items to the spirit world
+mods.thaumcraft.Arcane.removeRecipe(<ThaumicTinkerer:focusEnderChest>);
+mods.thaumcraft.Research.removeResearch("FOCUS_ENDER_CHEST");
+NEI.hide(<ThaumicTinkerer:focusEnderChest>);
