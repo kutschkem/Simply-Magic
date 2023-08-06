@@ -19,3 +19,18 @@ function(out as IItemStack, ins, cinfo as ICraftingInfo){
   }
   return out;
 });
+
+
+val book_binder = <Mystcraft:BlockBookBinder>;
+
+recipes.remove(book_binder);
+recipes.addShaped(book_binder,
+[[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+ [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+ [<ore:plankWood>, null, <ore:plankWood>]],
+function(out as IItemStack, ins, cinfo as ICraftingInfo){
+  if(isNull(cinfo.dimension) || cinfo.dimension.id == dim_spirit_world) {
+      return null;
+  }
+  return out;
+});
