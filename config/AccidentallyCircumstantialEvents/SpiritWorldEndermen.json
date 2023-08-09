@@ -1,0 +1,26 @@
+{
+"events": [
+    {
+       "event_type": "LIVING_DROPS",
+       "target": "Enderman",
+       "tasks": [
+//             {
+//                "task_type": "DROPS_REMOVE",
+//                "modid": "minecraft",
+//                "name": "ender_pearl",
+//                "meta": "0",
+//                "count": "5",
+//                "conditions": [
+//                      {
+//                          "condition_type": "DIMENSION",
+//                          "dim_id": "-37"
+//                       }
+//                 ]
+//              }
+
+
+        ]
+     }
+
+]
+}
