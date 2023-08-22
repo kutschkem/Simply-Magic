@@ -5,13 +5,12 @@ val runes = [<arsmagica2:rune:1>, <arsmagica2:rune:2>, <arsmagica2:rune:3>, <ars
 
 // copy waystone to linking book
 recipes.addShapeless(<Mystcraft:linkbook>,[<Mystcraft:linkbook>.marked("book"), waystone.marked("waystone")], function(output, inputs, crafting) {
- return inputs.book.withTag(
+ return inputs.book.updateTag(
 	{Dimension: inputs.waystone.tag.PosD,
 	 DisplayName: inputs.waystone.tag.NameD,
 	 SpawnX: inputs.waystone.tag.PosX,
 	 SpawnY: inputs.waystone.tag.PosY,
-	 SpawnZ: inputs.waystone.tag.PosZ,
-         Flags:  inputs.book.tag.Flags
+	 SpawnZ: inputs.waystone.tag.PosZ
 	});
 });
 
