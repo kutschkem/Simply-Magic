@@ -22,6 +22,10 @@ mods.thaumcraft.Arcane.addShaped("ETHEREALWALL", <WitchingGadgets:WG_StoneDevice
 mods.thaumcraft.Arcane.removeRecipe(<WitchingGadgets:WG_StoneDevice:7>);
 mods.thaumcraft.Arcane.addShaped("AGEINGSTONE", <WitchingGadgets:WG_StoneDevice:7>, "ordo 10, perditio 10", [[null, anyShard, null], [arcaneStone, <minecraft:clock>, arcaneStone], [null, anyShard, null]]);
 
+/* - x4 ore processing */
+
+mods.thaumcraft.Crucible.addRecipe("PUREIRON", <Thaumcraft:ItemNugget:16>, <aobd:dustIron>, "metallum 15, ordo 15");
+mods.thaumcraft.Crucible.addRecipe("PUREGOLD", <Thaumcraft:ItemNugget:31>, <aobd:dustGold>, "metallum 15, ordo 15");
 
 
 /* - Research (WIP) */
