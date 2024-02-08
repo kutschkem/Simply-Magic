@@ -12,13 +12,13 @@ thaumcraftStaffCores.add(<Thaumcraft:WandRod:100>);
 
 //shards
 val netherShards = <ore:shardNether>;
-netherShards.add(<ForbiddenMagic:NetherShard>);
-netherShards.add(<ForbiddenMagic:NetherShard:1>);
-netherShards.add(<ForbiddenMagic:NetherShard:2>);
-netherShards.add(<ForbiddenMagic:NetherShard:3>);
-netherShards.add(<ForbiddenMagic:NetherShard:4>);
-netherShards.add(<ForbiddenMagic:NetherShard:5>);
-netherShards.add(<ForbiddenMagic:NetherShard:6>);
+netherShards.add(<ForbiddenMagic:NetherShard>); // Wrath shard
+netherShards.add(<ForbiddenMagic:NetherShard:1>);  // Envy Shard
+//netherShards.add(<ForbiddenMagic:NetherShard:2>); // Taint Shard - needs to be excluded here because otherwise there is a recipe clash
+netherShards.add(<ForbiddenMagic:NetherShard:3>); // Pride Shard
+netherShards.add(<ForbiddenMagic:NetherShard:4>); // Lust Shard
+netherShards.add(<ForbiddenMagic:NetherShard:5>); // Sloth Shard
+netherShards.add(<ForbiddenMagic:NetherShard:6>); // Greed Shard
 netherShards.add(<ForbiddenMagic:GluttonyShard>);
 
 val elementalShards = <ore:shardElemental>;
