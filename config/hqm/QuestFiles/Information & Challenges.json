@@ -4,7 +4,7 @@
   "quests": [
     {
       "name": "Vanilla Combat Sucks",
-      "description": "All vanilla tools and armor above stone are set to one durability. This is meant to encourage the use of modded armors and weapons, as well as provide a challenge in the early game. The exception to this is Iron Pickaxes which have a durability of 100.",
+      "description": "All vanilla tools and armor above stone have less durability or are set to one durability. This is meant to encourage the use of modded armors and weapons, as well as provide a challenge in the early game. Iron tools are usable but have less durability. Gold armor has less durability, but gold tools are untouched so loot from dungeons is more interesting. Diamond has durability one.",
       "x": 18,
       "y": 23,
       "icon": {
