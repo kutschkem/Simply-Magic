@@ -120,6 +120,14 @@ recipes.addShapeless(boots,
 });
 }
 
+// fix for #25 (witchery slabs are uncraftable)
+recipes.removeShaped(<minecraft:wooden_slab>,[[<witchery:witchwood>,<witchery:witchwood>,<witchery:witchwood>]]);
+recipes.removeShaped(<minecraft:wooden_slab:1>,[[<witchery:witchwood:1>,<witchery:witchwood:1>,<witchery:witchwood:1>]]);
+recipes.removeShaped(<minecraft:wooden_slab:2>,[[<witchery:witchwood:2>,<witchery:witchwood:2>,<witchery:witchwood:2>]]);
+recipes.addShaped(<witchery:witchwoodslab>,[[<witchery:witchwood>,<witchery:witchwood>,<witchery:witchwood>]]);
+recipes.addShaped(<witchery:witchwoodslab:1>,[[<witchery:witchwood:1>,<witchery:witchwood:1>,<witchery:witchwood:1>]]);
+recipes.addShaped(<witchery:witchwoodslab:2>,[[<witchery:witchwood:2>,<witchery:witchwood:2>,<witchery:witchwood:2>]]);
+
 //ideas:
 // - allow void putty to repair poppets of vampirism
 // - put nodes / animals stored in AM2 Appropriation spell into thaumcraft jar
